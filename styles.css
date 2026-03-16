@@ -249,6 +249,67 @@ h1 {
   margin-top: 12px;
 }
 
+.sessions-hero .hero-grid {
+  padding-bottom: 8px;
+}
+
+.session-list {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+  color: var(--ink-soft);
+}
+
+.session-list li::before {
+  content: "•";
+  color: var(--sunset);
+  margin-right: 8px;
+}
+
+.session-price {
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.booking-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.booking-card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid #efe6d6;
+}
+
+.booking-card ul {
+  list-style: none;
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+  color: var(--ink-soft);
+}
+
+.booking-card ul li::before {
+  content: "•";
+  color: var(--sunset);
+  margin-right: 8px;
+}
+
+.booking-note {
+  margin-top: 18px;
+  padding: 14px;
+  background: var(--sky);
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
 .about-grid,
 .details-grid,
 .workshop-grid,
