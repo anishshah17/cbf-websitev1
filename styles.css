@@ -392,6 +392,14 @@ h3 {
   clear: both;
 }
 
+/* This ensures all images inside your gallery don't overflow their boxes */
+.gallery-img {
+  width: 100%;       /* Makes the image fill the width of the container */
+  height: 250px;     /* Sets a fixed height */
+  object-fit: cover; /* This is the MAGIC property: it crops the image 
+                        to fit the area without stretching it! */
+  border-radius: 8px;
+}
 
 /* Grids */
 .about-grid,
@@ -438,7 +446,23 @@ h3 {
   font-weight: 600;
 }
 
-/* Video Frame */
+/* Calendly full-width wrapper */
+.calendly-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  background: #0b0c10;
+}
+
+.calendly-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 750px;
+}
+
 .video-frame {
   max-width: 1000px;
   margin: 0 auto;

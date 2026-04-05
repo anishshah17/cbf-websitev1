@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -110,37 +111,31 @@
       <section id="booking" class="section booking">
         <div class="section-header reveal">
           <h2>Book a 30-Minute Session</h2>
-          <p>
-            Embed your Calendly booking page below. Once someone books, they’ll
-            receive a confirmation email automatically.
-          </p>
+          <p>Pick a time that works for your family — you'll receive a confirmation email right away.</p>
         </div>
-        <div class="booking-grid">
-          <div class="booking-card reveal">
-            <h3>Calendly Embed</h3>
-            <p>
-              Replace the placeholder URL in the iframe with your Calendly link
-              to enable booking.
-            </p>
-            <div class="video-frame">
-              <iframe
-                src="https://calendly.com/annutechnologies/30min"
-                title="Book a 30-minute session"
-                frameborder="0"
-              ></iframe>
-            </div>
-          </div>
-          <div class="booking-card reveal">
-            <h3>What Happens Next</h3>
-            <ul>
-              <li>Pick a 30-minute slot that works for your family.</li>
-              <li>Receive an automatic confirmation email.</li>
-              <li>We’ll follow up with any prep materials before the session.</li>
-            </ul>
-            <div class="booking-note">
-              Prefer a different scheduler? We can embed Acuity, Google
-              Appointments, or another booking tool instead.
-            </div>
+
+        <!-- Calendly inline widget: full-width, outside cards to avoid CSS interference -->
+        <div class="calendly-wrap">
+          <iframe
+            src="https://calendly.com/annutechnologies/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=0b0c10&text_color=c5c6c7&primary_color=fb8500"
+            title="Book a 30-minute session"
+            width="100%"
+            height="750"
+            frameborder="0"
+            scrolling="no"
+            allow="payment"
+          ></iframe>
+        </div>
+
+        <div class="booking-card" style="max-width: 700px; margin: 32px auto 0;">
+          <h3>What Happens Next</h3>
+          <ul>
+            <li>Pick a 30-minute slot that works for your family.</li>
+            <li>Receive an automatic confirmation email.</li>
+            <li>We'll follow up with any prep materials before the session.</li>
+          </ul>
+          <div class="booking-note">
+            Questions? Email us at napervillebusinessfair@gmail.com
           </div>
         </div>
       </section>

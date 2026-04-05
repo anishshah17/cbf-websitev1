@@ -16,6 +16,8 @@ const revealSelectors = [
   ".photo-slot",
   ".woven-image",
   ".video-frame",
+  ".calendly-wrap",
+  ".booking-card",
   ".testimonial-grid blockquote",
   ".hero-grid > *"
 ];
