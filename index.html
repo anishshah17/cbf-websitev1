@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <button class="announcement-fab" type="button" data-open-announcement>
+      Announcements
+    </button>
+
     <div class="announcement-modal is-hidden" data-announcement-modal>
       <div class="announcement-panel">
         <button class="modal-close" type="button" aria-label="Close announcement" data-close-announcement>
@@ -38,17 +42,6 @@
           <a class="btn ghost" href="sessions.html">Book a Session</a>
           <button class="btn ghost" type="button" data-close-announcement>Close</button>
         </div>
-      </div>
-    </div>
-
-    <div class="announcement-bar">
-      <div class="announcement-inner">
-        <span class="announcement-label">Announcements</span>
-        <ul>
-          <li>Applications open in late April 2026.</li>
-          <li>Save the date: Saturday, August 8, 2026.</li>
-          <li>1:1 mentorship booking is live.</li>
-        </ul>
       </div>
     </div>
 
@@ -79,9 +72,8 @@
           <p class="eyebrow">Naperville Children's Business Fair</p>
           <h1>A bright launchpad for the next generation of kidpreneurs.</h1>
           <p class="lead">
-            Families come here to apply, stay updated, and get ready for a
-            one-day market where children ages 5 to 14 build and sell their own
-            original businesses.
+            A one-day market where children ages 5 to 14 build and sell their
+            own original businesses.
           </p>
           <div class="cta-row">
             <a class="btn primary" href="applications.html">Apply to the Fair</a>
@@ -90,17 +82,22 @@
           </div>
         </div>
 
-        <div class="hero-card reveal">
-          <h2>2026 Snapshot</h2>
-          <ul>
-            <li><strong>Date:</strong> Saturday, August 8, 2026</li>
-            <li><strong>Time:</strong> 10:00 AM to 2:00 PM</li>
-            <li><strong>Location:</strong> Naperville Central High School</li>
-            <li><strong>Ages:</strong> 5 to 14</li>
-          </ul>
-          <div class="hero-note">
-            The homepage now keeps the essentials up front. The committee story
-            and workshop details live on the About and Event pages.
+        <div class="hero-card hero-card--stacked reveal">
+          <div class="hero-card__content">
+            <h2>2026 Fair Details</h2>
+            <ul>
+              <li><strong>Date:</strong> Saturday, August 8, 2026</li>
+              <li><strong>Time:</strong> 10:00 AM to 2:00 PM</li>
+              <li><strong>Location:</strong> Naperville Central High School</li>
+              <li><strong>Ages:</strong> 5 to 14</li>
+            </ul>
+          </div>
+          <div class="hero-card__image hero-card__image--wide">
+            <img
+              class="hero-home-image"
+              src="assets/IMG_8794.jpg"
+              alt="Young entrepreneurs smiling at the Naperville Children's Business Fair"
+            />
           </div>
         </div>
       </div>
@@ -109,11 +106,7 @@
     <main>
       <section class="section">
         <div class="section-header reveal">
-          <h2>What families usually need first</h2>
-          <p>
-            The homepage is now focused on the high-level decisions: apply,
-            prepare, explore media, and join the update list.
-          </p>
+          <h2>Quick Links</h2>
         </div>
         <div class="details-grid">
           <div class="details-card reveal">
@@ -178,8 +171,8 @@
             src="assets/photos/chick fil a cbf.jpeg"
             alt="Community partner supporting the Naperville Children's Business Fair"
           />
-          <div class="photo-slot reveal">Add another featured fair photo</div>
-          <div class="photo-slot reveal">Add a short recap video thumbnail</div>
+          <div class="photo-slot reveal">More fair photos coming soon</div>
+          <div class="photo-slot reveal">Video highlights coming soon</div>
         </div>
       </section>
 
@@ -187,8 +180,8 @@
         <div class="section-header reveal">
           <h2>Join the Mailing List</h2>
           <p>
-            This signup now sends submissions to the committee inbox so you can
-            start collecting interested families right away.
+            Fill out this form to receive updates from our committee about
+            applications, fair-day reminders, and important announcements.
           </p>
         </div>
         <div class="contact-grid">
@@ -211,8 +204,8 @@
               <input type="email" name="Email" placeholder="Email address" required />
               <button class="btn primary" type="submit">Join Mailing List</button>
               <small>
-                The first FormSubmit submission may ask you to confirm the inbox.
-                After that, signups are emailed directly to the committee.
+                After signup, our team will keep you posted with important fair
+                updates and reminders.
               </small>
             </form>
           </div>

@@ -45,6 +45,7 @@ function setupAnnouncementModal() {
   }
 
   const closeButtons = modal.querySelectorAll("[data-close-announcement]");
+  const openButtons = document.querySelectorAll("[data-open-announcement]");
   const dismissedKey = "cbf-announcement-dismissed";
   const storage = getSessionStorage();
 
@@ -55,6 +56,10 @@ function setupAnnouncementModal() {
 
   modal.classList.remove("is-hidden");
 
+  const openModal = () => {
+    modal.classList.remove("is-hidden");
+  };
+
   const closeModal = () => {
     modal.classList.add("is-hidden");
     if (storage) {
@@ -64,6 +69,10 @@ function setupAnnouncementModal() {
 
   closeButtons.forEach((button) => {
     button.addEventListener("click", closeModal);
+  });
+
+  openButtons.forEach((button) => {
+    button.addEventListener("click", openModal);
   });
 
   modal.addEventListener("click", (event) => {
