@@ -2,32 +2,26 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
-  # Debug: list all files Cloud Build sees
-  - name: 'ubuntu'
-    args: ['ls', '-la', '/workspace']
-
-  # Build the image
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'build',
+      '--no-cache',
       '--platform', 'linux/amd64',
       '-t', 'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest',
       '-f', '/workspace/Dockerfile',
       '/workspace'
     ]
 
-  # Push the image
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'push',
       'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest'
     ]
 
-  # Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args: [
-      'run', 'deploy', 'my-website',
+      'run', 'deploy', 'cbf-website',
       '--image', 'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest',
       '--platform', 'managed',
       '--region', 'us-central1',
