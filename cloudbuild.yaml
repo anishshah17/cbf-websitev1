@@ -9,7 +9,8 @@ steps:
       'build',
       '--platform', 'linux/amd64',
       '-t', 'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest',
-      '.'
+      '-f', '/workspace/Dockerfile',
+      '/workspace'
     ]
 
   # Push the image
