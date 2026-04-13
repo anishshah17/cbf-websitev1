@@ -1,4 +1,8 @@
 steps:
+  # Debug: list all files Cloud Build sees
+  - name: 'ubuntu'
+    args: ['ls', '-la', '/workspace']
+
   # Build the image
   - name: 'gcr.io/cloud-builders/docker'
     args: [
