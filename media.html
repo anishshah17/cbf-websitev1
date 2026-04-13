@@ -6,10 +6,23 @@
     <title>Media | Naperville Children's Business Fair</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="announcement-bar">
+      <div class="announcement-inner">
+        <span class="announcement-label">Announcements</span>
+        <ul>
+          <li>Applications open in late April 2026.</li>
+          <li>Media and recap assets can live here.</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="hero-orb hero-orb--one" aria-hidden="true"></div>
     <div class="hero-orb hero-orb--three" aria-hidden="true"></div>
 
@@ -24,47 +37,77 @@
         <a href="event.html">Event Details</a>
         <a href="media.html" class="active">Media</a>
         <a href="sessions.html">1:1 Sessions</a>
+        <a href="applications.html">Apply</a>
+        <a href="sponsors.html">Sponsors</a>
         <a href="contact.html">Contact</a>
       </div>
     </nav>
 
     <main>
-      <section class="section video">
+      <section class="section">
         <div class="section-header reveal">
-          <h2>Video Highlight</h2>
-          <p>Embed your Vimeo video below by replacing the placeholder ID.</p>
-        </div>
-        <div class="video-frame reveal">
-          <iframe
-            src="https://player.vimeo.com/video/719665752"
-            title="Naperville Children's Business Fair video"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-
-      <section class="section social">
-        <div class="section-header reveal">
-          <h2>Follow + Share</h2>
+          <h2>Media Library</h2>
           <p>
-            Add your Instagram and Facebook links, and embed the feeds if you’d
-            like them to show directly on the page.
+            This page is set up as a clean gallery for featured video, photos,
+            and media contact details so updates are easy to drop in.
           </p>
         </div>
-        <div class="social-grid">
-          <div class="social-card reveal">
-            <h3>Instagram</h3>
-            <p>Add your Instagram URL here.</p>
-            <a class="btn ghost" href="https://instagram.com">Instagram Link</a>
-            <div class="embed-placeholder">[ Instagram Embed Placeholder ]</div>
+
+        <div class="media-layout">
+          <div class="media-stack">
+            <div class="media-card reveal">
+              <h3>Featured Video</h3>
+              <p>The main recap video can stay front and center here.</p>
+              <div class="video-frame" style="margin-top: 18px;">
+                <iframe
+                  src="https://player.vimeo.com/video/719665752"
+                  title="Naperville Children's Business Fair featured video"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="media-card reveal">
+              <h3>Gallery Slots</h3>
+              <p>Use these cards for highlight reels, sponsor clips, or press-ready images.</p>
+              <div class="photo-grid" style="margin-top: 18px;">
+                <img src="assets/photos/IMG_1872.jpeg" alt="Kidpreneurs standing proudly at the fair" />
+                <img src="assets/photos/chick fil a cbf.jpeg" alt="Community sponsor activation at the fair" />
+                <div class="photo-slot">Add another video thumbnail or embed preview</div>
+                <div class="photo-slot">Add another photo or press image</div>
+              </div>
+            </div>
           </div>
-          <div class="social-card reveal">
-            <h3>Facebook</h3>
-            <p>Add your Facebook URL here.</p>
-            <a class="btn ghost" href="https://facebook.com">Facebook Link</a>
-            <div class="embed-placeholder">[ Facebook Embed Placeholder ]</div>
+
+          <div class="media-stack">
+            <div class="media-card reveal">
+              <h3>Media Contact</h3>
+              <p>Use this area for journalists, community partners, or sponsor outreach.</p>
+              <div class="cta-row">
+                <a class="btn primary" href="mailto:napervillebusinessfair@gmail.com">Email Media Contact</a>
+              </div>
+            </div>
+
+            <div class="media-card reveal">
+              <h3>Social Links</h3>
+              <p>Replace the placeholder links below once your channels are finalized.</p>
+              <div class="cta-row">
+                <a class="btn ghost" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+                <a class="btn ghost" href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+              </div>
+              <div class="embed-placeholder" style="margin-top: 18px;">
+                Add social embeds, press logos, or a reel preview here
+              </div>
+            </div>
+
+            <div class="media-card reveal">
+              <h3>Press Notes</h3>
+              <p>
+                Add publication logos, short coverage summaries, or downloadable
+                assets for community partners here.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -79,6 +122,7 @@
         <p>© 2026 Naperville Children's Business Fair</p>
       </div>
     </footer>
+
     <script src="site.js"></script>
   </body>
 </html>

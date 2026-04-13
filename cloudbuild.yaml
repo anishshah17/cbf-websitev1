@@ -1,0 +1,30 @@
+steps:
+  # Build the image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build',
+      '--platform', 'linux/amd64',
+      '-t', 'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest',
+      '.'
+    ]
+
+  # Push the image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'push',
+      'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest'
+    ]
+
+  # Deploy to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args: [
+      'run', 'deploy', 'my-website',
+      '--image', 'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest',
+      '--platform', 'managed',
+      '--region', 'us-central1',
+      '--allow-unauthenticated'
+    ]
+
+images:
+  - 'us-central1-docker.pkg.dev/ncbf2026/cbf-website-repo/fairweb:latest'

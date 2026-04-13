@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Applications | Naperville Children's Business Fair</title>
     <meta
-      description
-      content="Apply to be a kidpreneur at the Naperville Children's Business Fair. Submit your application via Google Forms."
+      name="description"
+      content="Apply to be a kidpreneur at the Naperville Children's Business Fair."
     />
-    <link rel="preconnect" href
-      href="https://fonts.googleapis.com"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -25,10 +19,10 @@
   <body>
     <div class="announcement-bar">
       <div class="announcement-inner">
-        <span class="announcement-label">📣 Announcements</span>
+        <span class="announcement-label">Announcements</span>
         <ul>
-          <li>Save the date! Add the 2026 fair date here.</li>
           <li>Applications open in late April 2026.</li>
+          <li>Use one application per business.</li>
         </ul>
       </div>
     </div>
@@ -37,47 +31,43 @@
       <div class="hero-orb hero-orb--one" aria-hidden="true"></div>
       <div class="hero-orb hero-orb--two" aria-hidden="true"></div>
       <div class="hero-orb hero-orb--three" aria-hidden="true"></div>
+
       <nav class="nav">
         <div class="logo">
-          <img
-            src="assets/cbl-logo.png"
-            alt="Naperville Children's Business Fair logo"
-          />
+          <img src="assets/cbf-logo.png" alt="Naperville Children's Business Fair logo" />
           <span>Naperville Children's Business Fair</span>
         </div>
         <div class="nav-links">
-          <a href="index.html#about">About</a>
-          <a href="index.html#committee">Committee</a>
-          <a href="index.html#details">Event Details</a>
-          <a href="index.html#video">Video</a>
-          <a href="index.html#photos">Photos</a>
-          <a href="index.html#workshops">Workshops</a>
-          <a href="index.html#faq">FAQ</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="event.html">Event Details</a>
+          <a href="media.html">Media</a>
           <a href="sessions.html">1:1 Sessions</a>
-          <a href="applications.html" class="active">Apply Now</a>
-          <a href="index.html#contact">Contact</a>
+          <a href="applications.html" class="active">Apply</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="contact.html">Contact</a>
         </div>
       </nav>
 
       <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Join the Fair</p>
-          <h1>Ready to launch your business?</h1>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Applications</p>
+          <h1>Apply to become a 2026 kidpreneur.</h1>
           <p class="lead">
-            Fill out the application below to secure your spot at the 2026
-            Naperville Children's Business Fair.
+            Families can use this page as the single application hub once the
+            official form is ready.
           </p>
         </div>
 
-        <div class="hero-card">
-          <h2>Application Info</h2>
+        <div class="hero-card reveal">
+          <h2>Before You Start</h2>
           <ul>
-            <li><strong>Deadline:</strong> TBD (Late May)</li>
-            <li><strong>Eligibility:</strong> Ages 5–14</li>
-            <li><strong>Format:</strong> Online via Google Forms</li>
+            <li><strong>Eligibility:</strong> Ages 5 to 14</li>
+            <li><strong>Team Size:</strong> Up to 3 participants per business</li>
+            <li><strong>Format:</strong> One application per business</li>
           </ul>
           <div class="hero-note">
-            Please ensure all participant names are accurate.
+            Replace the Google Form embed below when your application is live.
           </div>
         </div>
       </div>
@@ -85,31 +75,36 @@
 
     <main>
       <section class="section application-form">
-        <div class="section-header">
+        <div class="section-header reveal">
           <h2>Official Application</h2>
           <p>
-            Complete the form below. Once submitted, our team will review your
-            business idea and get back to you via email.
+            Swap the placeholder embed below with the final Google Form or
+            application tool when you are ready to launch.
           </p>
         </div>
 
-        <div class="form-container" style="margin-top: 2rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-          <!-- REPLACE THE SRC BELOW WITH YOUR ACTUAL GOOGLE FORM EMBED LINK -->
-          <iframe 
-            src="https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/viewform?embedded=true" 
-            width="100%" 
-            height="1200" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0">
+        <div class="form-container reveal">
+          <iframe
+            src="https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/viewform?embedded=true"
+            height="1200"
+            title="Naperville Children's Business Fair application form"
+          >
             Loading…
           </iframe>
         </div>
       </section>
     </main>
 
-    <footer class="footer" style="padding: 2rem; text-align: center; background: #f9f9f9; margin-top: 4rem;">
-      <p>&copy; 2026 Naperville Children's Business Fair. All rights reserved.</p>
+    <footer class="footer">
+      <div>
+        <strong>Naperville Children's Business Fair</strong>
+        <p>Hosted by local Naperville high school students.</p>
+      </div>
+      <div>
+        <p>© 2026 Naperville Children's Business Fair</p>
+      </div>
     </footer>
+
+    <script src="site.js"></script>
   </body>
 </html>

@@ -1,72 +1,88 @@
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-const revealSelectors = [
-  ".announcement-bar",
-  ".hero-copy",
-  ".hero-card",
-  ".section-header",
-  ".about-card",
-  ".details-card",
-  ".workshop-card",
-  ".social-card",
-  ".contact-card",
-  ".committee-details",
-  ".committee-about",
-  ".announcement-card",
-  ".photo-slot",
-  ".woven-image",
-  ".video-frame",
-  ".calendly-wrap",
-  ".booking-card",
-  ".testimonial-grid blockquote",
-  ".hero-grid > *"
-];
+document.addEventListener("DOMContentLoaded", () => {
+  setupRevealAnimations();
+  setupAnnouncementModal();
+});
 
-const revealElements = Array.from(
-  new Set(
-    revealSelectors
-      .flatMap((selector) => Array.from(document.querySelectorAll(selector)))
-      .filter((el) => el instanceof HTMLElement)
-  )
-);
+function setupRevealAnimations() {
+  const revealElements = Array.from(document.querySelectorAll(".reveal"));
 
-// Initial state
-revealElements.forEach((el) => el.classList.add("reveal"));
+  if (revealElements.length === 0) {
+    return;
+  }
 
-if (prefersReducedMotion) {
-  revealElements.forEach((el) => el.classList.add("reveal--visible"));
-} else {
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
-  };
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    revealElements.forEach((element) => element.classList.add("reveal--visible"));
+    return;
+  }
 
-  const observer = new IntersectionObserver((entries, currentObserver) => {
-    // Add staggered delay for elements appearing at the same time
-    let delay = 0;
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add("reveal--visible");
-        }, delay);
-        delay += 100; // 100ms stagger between elements in the same viewport
+  const observer = new IntersectionObserver(
+    (entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("reveal--visible");
         currentObserver.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
+      });
+    },
+    {
+      threshold: 0.14,
+      rootMargin: "0px 0px -30px 0px"
+    }
+  );
 
-  revealElements.forEach((el) => observer.observe(el));
+  revealElements.forEach((element) => observer.observe(element));
 }
 
-// Add parallax effect to hero orbs
-document.addEventListener("mousemove", (e) => {
-  if (prefersReducedMotion) return;
-  const orbs = document.querySelectorAll(".hero-orb");
-  const x = e.clientX / window.innerWidth;
-  const y = e.clientY / window.innerHeight;
+function setupAnnouncementModal() {
+  const modal = document.querySelector("[data-announcement-modal]");
 
-  orbs.forEach((orb, index) => {
-    const speed = (index + 1) * 20;
-    orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+  if (!modal) {
+    return;
+  }
+
+  const closeButtons = modal.querySelectorAll("[data-close-announcement]");
+  const dismissedKey = "cbf-announcement-dismissed";
+  const storage = getSessionStorage();
+
+  if (storage && storage.getItem(dismissedKey) === "true") {
+    modal.classList.add("is-hidden");
+    return;
+  }
+
+  modal.classList.remove("is-hidden");
+
+  const closeModal = () => {
+    modal.classList.add("is-hidden");
+    if (storage) {
+      storage.setItem(dismissedKey, "true");
+    }
+  };
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", closeModal);
   });
-});
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  });
+}
+
+function getSessionStorage() {
+  try {
+    return window.sessionStorage;
+  } catch (error) {
+    return null;
+  }
+}
