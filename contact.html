@@ -51,7 +51,14 @@
               be sent directly to our committee team.
             </p>
             <div class="cta-row">
-              <a class="btn primary" href="mailto:napervillebusinessfair@gmail.com">napervillebusinessfair@gmail.com</a>
+              <a class="btn primary" href="mailto:napervillebusinessfair@gmail.com">Email Committee</a>
+              <button
+                class="btn ghost"
+                type="button"
+                data-copy-email="napervillebusinessfair@gmail.com"
+              >
+                Copy Email Address
+              </button>
             </div>
           </div>
 
@@ -62,16 +69,12 @@
             </p>
             <form
               class="mailing-list-form"
-              action="https://formsubmit.co/napervillebusinessfair@gmail.com"
-              method="POST"
+              data-mailing-list-form
             >
-              <input type="hidden" name="_subject" value="Naperville Children's Business Fair Mailing List Signup" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="text" name="_honey" style="display: none;" tabindex="-1" autocomplete="off" />
               <input type="text" name="Parent or Guardian Name" placeholder="Parent or guardian name" required />
               <input type="email" name="Email" placeholder="Email address" required />
               <button type="submit" class="btn primary">Join Mailing List</button>
+              <p class="form-status" data-form-status aria-live="polite"></p>
               <small>
                 Signups are emailed to napervillebusinessfair@gmail.com.
               </small>
@@ -81,8 +84,8 @@
           <div class="contact-card reveal">
             <h3>Day-of Questions</h3>
             <p>
-              We hope to see everyone on Saturday, August 8, 2026 at Naperville
-              Central High School.
+              We hope to see everyone on Saturday, August 8, 2026. The fair
+              location will be announced soon.
             </p>
             <p style="margin-top: 12px;">
               Use the contact page for general questions and the Event Details
@@ -102,7 +105,15 @@
         <p>© 2026 Naperville Children's Business Fair</p>
       </div>
     </footer>
+    <div class="copy-toast" data-copy-toast role="status" aria-live="polite">
+      Email copied to clipboard.
+    </div>
 
+    <script>
+      window.SUPABASE_URL = "https://YOUR-PROJECT.supabase.co";
+      window.SUPABASE_ANON_KEY = "YOUR-ANON-KEY";
+      window.SUPABASE_TABLE = "mailing_list_signups";
+    </script>
     <script src="site.js"></script>
   </body>
 </html>

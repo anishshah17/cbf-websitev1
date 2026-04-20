@@ -466,6 +466,16 @@ ul {
   flex: 0 0 auto;
 }
 
+.why-sponsor-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.why-sponsor-list li {
+  color: var(--text-soft);
+}
+
 .hero-note,
 .booking-note,
 .workshop-note {
@@ -697,6 +707,14 @@ ul {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.committee-photos img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
+}
+
 .photo-slot,
 .embed-placeholder,
 .floated-img-left,
@@ -808,6 +826,21 @@ ul {
   font-size: 0.9rem;
 }
 
+.form-status {
+  display: none;
+  margin: 8px 0 0;
+  font-size: 0.92rem;
+  color: var(--teal);
+}
+
+.form-status.is-visible {
+  display: block;
+}
+
+.form-status.error {
+  color: #b54646;
+}
+
 .media-layout {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -816,6 +849,30 @@ ul {
 .media-stack {
   display: grid;
   gap: 22px;
+}
+
+.tier-list {
+  margin-top: 14px;
+  display: grid;
+  gap: 9px;
+  list-style: none;
+}
+
+.tier-list li {
+  display: flex;
+  gap: 9px;
+  color: var(--text-soft);
+  align-items: flex-start;
+}
+
+.tier-list li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: 0 0 auto;
 }
 
 .footer {
@@ -870,6 +927,39 @@ ul {
 .floated-img-right {
   width: min(280px, 100%);
   margin: 22px 0;
+}
+
+img.floated-img-left,
+img.floated-img-right {
+  display: block;
+  width: min(440px, 100%);
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(29, 36, 51, 0.12);
+  box-shadow: var(--shadow-soft);
+  background: #fff;
+  padding: 0;
+}
+
+.copy-toast {
+  position: fixed;
+  right: 18px;
+  bottom: 78px;
+  z-index: 130;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(20, 33, 44, 0.94);
+  color: #fff;
+  font-size: 0.9rem;
+  transition: opacity 0.26s ease, transform 0.26s ease;
+}
+
+.copy-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .application-form .section-header,
@@ -950,6 +1040,11 @@ ul {
 
   .committee-photos {
     grid-template-columns: 1fr;
+  }
+
+  .copy-toast {
+    right: 12px;
+    bottom: 12px;
   }
 
   .footer {
