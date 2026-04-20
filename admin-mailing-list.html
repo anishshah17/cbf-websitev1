@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mailing List Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <h2>Mailing List Admin</h2>
+          <p>Internal page for reviewing and exporting mailing-list signups.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Controls</h3>
+            <p>Load the latest signups from Supabase, then export as CSV.</p>
+            <div class="cta-row">
+              <button class="btn primary" id="load-signups" type="button">Load Signups</button>
+              <button class="btn ghost" id="export-csv" type="button" disabled>Export Emails CSV</button>
+            </div>
+            <p class="form-status is-visible" id="admin-status" aria-live="polite">
+              Waiting to load records.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-card" style="max-width: var(--max-width); margin: 22px auto 0;">
+          <h3>Signup Records</h3>
+          <div style="overflow-x: auto; margin-top: 12px;">
+            <table id="signup-table" style="width: 100%; border-collapse: collapse;">
+              <thead>
+                <tr>
+                  <th style="text-align: left; padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.12);">Submitted</th>
+                  <th style="text-align: left; padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.12);">Parent/Guardian</th>
+                  <th style="text-align: left; padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.12);">Email</th>
+                  <th style="text-align: left; padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.12);">Source Page</th>
+                </tr>
+              </thead>
+              <tbody id="signup-body">
+                <tr>
+                  <td colspan="4" style="padding: 12px; color: #556072;">No records loaded yet.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      window.SUPABASE_URL = "https://pptuwfepwpfhdsrlgofu.supabase.co";
+      window.SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBwdHV3ZmVwd3BmaGRzcmxnb2Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2NDQ3ODEsImV4cCI6MjA5MjIyMDc4MX0.C8Zq_bzvdPtuUTSwGVIqZHbkxtjHrJHcZnyVH8T8ywU";
+      window.SUPABASE_TABLE = "mailing_list_signups";
+    </script>
+    <script>
+      const config = {
+        url: window.SUPABASE_URL || "",
+        anonKey: window.SUPABASE_ANON_KEY || "",
+        table: window.SUPABASE_TABLE || "mailing_list_signups"
+      };
+
+      const loadButton = document.getElementById("load-signups");
+      const exportButton = document.getElementById("export-csv");
+      const status = document.getElementById("admin-status");
+      const body = document.getElementById("signup-body");
+      let currentRows = [];
+
+      const isConfigured = () =>
+        Boolean(config.url) &&
+        Boolean(config.anonKey) &&
+        config.url.includes(".supabase.co") &&
+        !config.url.includes("YOUR-PROJECT") &&
+        !config.anonKey.includes("YOUR-ANON-KEY");
+
+      const setStatus = (message, isError = false) => {
+        status.textContent = message;
+        status.classList.toggle("error", isError);
+      };
+
+      const escapeHtml = (value) =>
+        String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+
+      const renderRows = (rows) => {
+        if (!rows.length) {
+          body.innerHTML =
+            '<tr><td colspan="4" style="padding: 12px; color: #556072;">No records found.</td></tr>';
+          return;
+        }
+
+        body.innerHTML = rows
+          .map((row) => {
+            const submitted = row.submitted_at
+              ? new Date(row.submitted_at).toLocaleString()
+              : "";
+
+            return `
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.08);">${escapeHtml(submitted)}</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.08);">${escapeHtml(row.parent_name)}</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.08);">${escapeHtml(row.email)}</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(29,36,51,0.08);">${escapeHtml(row.source_page || "")}</td>
+              </tr>
+            `;
+          })
+          .join("");
+      };
+
+      const toCsv = (rows) => {
+        const header = ["submitted_at", "parent_name", "email", "source_page"];
+        const lines = [header.join(",")];
+
+        rows.forEach((row) => {
+          const values = [
+            row.submitted_at || "",
+            row.parent_name || "",
+            row.email || "",
+            row.source_page || ""
+          ].map((value) => `"${String(value).replaceAll('"', '""')}"`);
+          lines.push(values.join(","));
+        });
+
+        return lines.join("\n");
+      };
+
+      const downloadCsv = () => {
+        if (!currentRows.length) {
+          setStatus("Load records before exporting.", true);
+          return;
+        }
+
+        const csv = toCsv(currentRows);
+        const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        const date = new Date().toISOString().slice(0, 10);
+        link.href = url;
+        link.setAttribute("download", `mailing-list-signups-${date}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      };
+
+      const loadSignups = async () => {
+        if (!isConfigured()) {
+          setStatus(
+            "Set SUPABASE_URL and SUPABASE_ANON_KEY in this file before loading records.",
+            true
+          );
+          return;
+        }
+
+        setStatus("Loading records...");
+        exportButton.disabled = true;
+
+        try {
+          const response = await fetch(
+            `${config.url}/rest/v1/${config.table}?select=parent_name,email,source_page,submitted_at&order=submitted_at.desc`,
+            {
+              headers: {
+                apikey: config.anonKey,
+                Authorization: `Bearer ${config.anonKey}`
+              }
+            }
+          );
+
+          if (!response.ok) {
+            throw new Error("Failed to load records.");
+          }
+
+          currentRows = await response.json();
+          renderRows(currentRows);
+          exportButton.disabled = currentRows.length === 0;
+          setStatus(`Loaded ${currentRows.length} signup records.`);
+        } catch (error) {
+          currentRows = [];
+          renderRows([]);
+          setStatus("Could not load records. Check Supabase config and table permissions.", true);
+        }
+      };
+
+      loadButton.addEventListener("click", loadSignups);
+      exportButton.addEventListener("click", downloadCsv);
+    </script>
+  </body>
+</html>
