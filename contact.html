@@ -17,10 +17,10 @@
     <div class="hero-orb hero-orb--two" aria-hidden="true"></div>
 
     <nav class="nav">
-      <div class="logo">
-        <img src="assets/cbf-logo.png" alt="Naperville Children's Business Fair logo" />
+      <a class="logo" href="index.html" aria-label="Go to home page">
+          <img src="assets/cbf-logo.png" alt="Naperville Children's Business Fair logo" />
         <span>Naperville Children's Business Fair</span>
-      </div>
+        </a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="contact-grid">
-          <div class="contact-card reveal">
+          <div class="contact-card gradient-card gradient-card--warm reveal">
             <h3>Email the Team</h3>
             <p>
               Questions about applications, sponsorships, or fair logistics can
@@ -62,7 +62,7 @@
             </div>
           </div>
 
-          <div class="contact-card reveal" id="mailing-list">
+          <div class="contact-card gradient-card gradient-card--cool reveal" id="mailing-list">
             <h3>Join the Mailing List</h3>
             <p>
               Fill out this form to receive updates from our committee by email.
@@ -81,7 +81,7 @@
             </form>
           </div>
 
-          <div class="contact-card reveal">
+          <div class="contact-card gradient-card gradient-card--sun reveal">
             <h3>Day-of Questions</h3>
             <p>
               We hope to see everyone on Saturday, August 8, 2026. The fair
@@ -114,6 +114,7 @@
       window.SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBwdHV3ZmVwd3BmaGRzcmxnb2Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2NDQ3ODEsImV4cCI6MjA5MjIyMDc4MX0.C8Zq_bzvdPtuUTSwGVIqZHbkxtjHrJHcZnyVH8T8ywU";
       window.SUPABASE_TABLE = "mailing_list_signups";
     </script>
+    <script src="gemini-config.js"></script>
     <script src="site.js"></script>
   </body>
 </html>
