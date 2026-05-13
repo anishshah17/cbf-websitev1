@@ -1044,6 +1044,10 @@ body.has-announcement-fab .bizzy-widget {
   gap: 8px;
 }
 
+.committee-member h3 {
+  margin-top: 12px;
+}
+
 .committee-member-photo-slot {
   display: flex;
   align-items: center;
