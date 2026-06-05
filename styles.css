@@ -1236,6 +1236,17 @@ body.has-announcement-fab .bizzy-widget {
   margin-top: 18px;
 }
 
+.form-group {
+  display: grid;
+  gap: 7px;
+}
+
+.form-group label {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .mailing-list-form input,
 .mailing-list-form textarea {
   width: 100%;

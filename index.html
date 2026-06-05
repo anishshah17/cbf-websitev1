@@ -242,19 +242,29 @@
               Get application reminders, fair announcements, and major date
               updates by email.
             </p>
-            <form
-              class="mailing-list-form"
-              data-mailing-list-form
-            >
-              <input type="text" name="Parent or Guardian Name" placeholder="Parent or guardian name" required />
-              <input type="email" name="Email" placeholder="Email address" required />
-              <button class="btn primary" type="submit">Join Mailing List</button>
-              <p class="form-status" data-form-status aria-live="polite"></p>
-              <small>
-                After signup, our team will keep you posted with important fair
-                updates and reminders.
-              </small>
-            </form>
+            <div class="listmonk-newsletter-form">
+              <form
+                class="mailing-list-form"
+                method="post"
+                action="https://admissions-gary-generic-operator.trycloudflare.com"
+              >
+                <input type="hidden" name="l" value="1" />
+                <input type="hidden" name="nonce" />
+                <div class="form-group">
+                  <label for="home-mailing-email">Email Address</label>
+                  <input id="home-mailing-email" type="email" name="email" required placeholder="name@example.com" />
+                </div>
+                <div class="form-group">
+                  <label for="home-mailing-name">Name (Optional)</label>
+                  <input id="home-mailing-name" type="text" name="name" placeholder="Your Name" />
+                </div>
+                <button class="btn primary" type="submit">Subscribe</button>
+                <small>
+                  After signup, our team will keep you posted with important fair
+                  updates and reminders.
+                </small>
+              </form>
+            </div>
           </div>
           <div class="contact-card reveal">
             <h3>Prefer to Email Us Directly?</h3>
@@ -281,11 +291,6 @@
       </div>
     </footer>
 
-    <script>
-      window.SUPABASE_URL = "https://pptuwfepwpfhdsrlgofu.supabase.co";
-      window.SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBwdHV3ZmVwd3BmaGRzcmxnb2Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2NDQ3ODEsImV4cCI6MjA5MjIyMDc4MX0.C8Zq_bzvdPtuUTSwGVIqZHbkxtjHrJHcZnyVH8T8ywU";
-      window.SUPABASE_TABLE = "mailing_list_signups";
-    </script>
     <script src="gemini-config.js"></script>
     <script src="site.js"></script>
   </body>
