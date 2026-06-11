@@ -1960,3 +1960,54 @@ img.floated-img-right {
     transform: none;
   }
 }
+
+
+.origin-box {
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(255, 240, 234, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.origin-box::before {
+  content: "";
+  position: absolute;
+  inset: -35% auto auto -28%;
+  width: 58%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(22, 124, 128, 0.18), transparent 66%);
+  pointer-events: none;
+  animation: liquidGlassDrift 8.5s ease-in-out infinite;
+}
+
+.origin-box h2 {
+  position: relative;
+  margin-bottom: 16px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--text);
+}
+
+.origin-box p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.origin-box img {
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+  margin: 16px 0;
+  box-shadow: var(--shadow-soft);
+}
+
+.origin-box .caption {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  text-align: center;
+  font-style: italic;
+}
