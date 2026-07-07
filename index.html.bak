@@ -163,45 +163,64 @@
             alt="Families and students enjoying the fair together"
           />
         </div>
-      </section>
-
-      <section class="section">
-        <div class="section-header reveal">
-          <h2>2026 Sponsors</h2>
-          <p>This year’s fair is supported by incredible local businesses,
-            organizations.</p>
-        </div>
-
-        <div class="sponsor-logo-wall reveal">
-          <p class="sponsor-ribbon-label">Community Sponsors</p>
+        <div class="sponsor-logo-wall reveal" style="margin-top: 24px;">
+          <p class="sponsor-ribbon-label">2025 Sponsors</p>
           <div class="sponsor-marquee">
             <div class="sponsor-marquee-track">
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/andyscustard.jpeg" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/bestdefenseconcepts.png" alt="Best Defense Concepts logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/conciergelaw.png" alt="Concierge Law logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/gradepower.jpeg" alt="Grade Power logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/kendrascott.png" alt="Kendra Scott logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/ndp.jpeg" alt="Notre Dame Parish logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/raising cane's.png" alt="Raising Cane's logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/andyscustard.jpeg" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/bestdefenseconcepts.png" alt="Best Defense Concepts logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/conciergelaw.png" alt="Concierge Law logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/gradepower.jpeg" alt="Grade Power logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/kendrascott.png" alt="Kendra Scott logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/ndp.jpeg" alt="Notre Dame Parish logo" loading="lazy" /></div>
-              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/raising cane's.png" alt="Raising Cane's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/matrix club.png" alt="The Matrix Club logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nacc.png" alt="NACC logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville park district.png" alt="Naperville Park District logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville public library.png" alt="Naperville Public Library logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nef.png" alt="NEF logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/KidsMatter.png" alt="KidsMatter logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/raising cane's chicken fingers.png" alt="Raising Cane's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/goldfish swim school.jpeg" alt="Goldfish Swim School logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/capstone financial advisors.png" alt="Capstone Financial Advisors logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/cinnaholic.png" alt="Cinnaholic logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville development partnership.jpeg" alt="Naperville Development Partnership logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/pinots palette.jpeg" alt="Pinot's Palette logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/aqueity.png" alt="Aqueity logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/matrix club.png" alt="The Matrix Club logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nacc.png" alt="NACC logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville park district.png" alt="Naperville Park District logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville public library.png" alt="Naperville Public Library logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nef.png" alt="NEF logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/KidsMatter.png" alt="KidsMatter logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/raising cane's chicken fingers.png" alt="Raising Cane's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/goldfish swim school.jpeg" alt="Goldfish Swim School logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/capstone financial advisors.png" alt="Capstone Financial Advisors logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/cinnaholic.png" alt="Cinnaholic logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville development partnership.jpeg" alt="Naperville Development Partnership logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/pinots palette.jpeg" alt="Pinot's Palette logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/aqueity.png" alt="Aqueity logo" loading="lazy" /></div>
             </div>
           </div>
-        </div>
-
-        <div class="presenting-sponsors reveal">
-          <p class="presenting-title">Presenting Sponsors</p>
-          <div class="presenting-grid">
-            <div class="presenting-card presenting-card--neighbrhub">
-              <img class="presenting-logo-neighbrhub" src="assets/2026 sponsors/neighbrhub.png" alt="Neighbrhub logo" loading="lazy" />
-            </div>
-            <div class="presenting-card presenting-card--north-central">
-              <img src="assets/2026 sponsors/North-Central-College-Logo.png" alt="North Central College logo" loading="lazy" />
+          <div class="sponsor-marquee sponsor-marquee--reverse">
+            <div class="sponsor-marquee-track">
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/andy's frozen custard.png" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/chick-fil-a.png" alt="Chick-fil-A logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/dairy queen (dq).png" alt="Dairy Queen logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/giordano's.png" alt="Giordano's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/jenis ice creams.png" alt="Jeni's Ice Creams logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville hearing services.png" alt="Naperville Hearing Services logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/astro fun world.png" alt="Astro Fun World logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nautical bowls.png" alt="Nautical Bowls logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nrwib.png" alt="NRWIB logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/sno problems.jpeg" alt="Sno Problems logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/susan myket phd and associates.jpeg" alt="Susan Myket PhD and Associates logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/b and k.png" alt="B and K logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/andy's frozen custard.png" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/chick-fil-a.png" alt="Chick-fil-A logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/dairy queen (dq).png" alt="Dairy Queen logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/giordano's.png" alt="Giordano's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/jenis ice creams.png" alt="Jeni's Ice Creams logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville hearing services.png" alt="Naperville Hearing Services logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/astro fun world.png" alt="Astro Fun World logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nautical bowls.png" alt="Nautical Bowls logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nrwib.png" alt="NRWIB logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/sno problems.jpeg" alt="Sno Problems logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/susan myket phd and associates.jpeg" alt="Susan Myket PhD and Associates logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/b and k.png" alt="B and K logo" loading="lazy" /></div>
             </div>
           </div>
         </div>
