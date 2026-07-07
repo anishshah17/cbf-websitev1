@@ -2086,6 +2086,8 @@ img.floated-img-right {
 .presenting-card--neighbrhub {
   background: linear-gradient(160deg, rgba(20, 33, 44, 0.97), rgba(41, 58, 75, 0.95));
   overflow: hidden;
+  min-height: 180px;
+  padding: 10px 12px;
 }
 
 .presenting-card--north-central {
@@ -2104,9 +2106,10 @@ img.floated-img-right {
 }
 
 .presenting-logo-neighbrhub {
-  height: 150px;
-  max-width: none;
-  transform: translateY(20px) scale(1.2);
+  width: min(100%, 320px);
+  height: auto;
+  max-width: 100%;
+  transform: scale(1.22);
   transform-origin: center;
 }
 
