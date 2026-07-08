@@ -1524,8 +1524,8 @@ body.media-viewer-open {
 .sponsor-marquee {
   overflow: hidden;
   border-radius: 16px;
-  border: 1px solid rgba(29, 36, 51, 0.1);
-  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(29, 36, 51, 0.05);
+  background: transparent;
 }
 
 .sponsor-marquee-track {
@@ -1542,16 +1542,17 @@ body.media-viewer-open {
 }
 
 .sponsor-logo-card {
-  min-width: 210px;
-  min-height: 110px;
+  min-width: 280px;
+  min-height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(29, 36, 51, 0.1);
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 10px 24px rgba(29, 36, 51, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(231, 111, 81, 0.15), 0 0 20px rgba(22, 124, 128, 0.15);
+  backdrop-filter: blur(4px);
 }
 
 .sponsor-logo-card img {
@@ -2048,9 +2049,9 @@ img.floated-img-right {
 .presenting-title {
   position: relative;
   margin: 0 0 16px 0;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.05em;
-  color: var(--text-soft);
+  color: var(--accent);
   text-align: center;
   text-transform: uppercase;
 }
@@ -2065,17 +2066,18 @@ img.floated-img-right {
 }
 
 .presenting-card {
-  min-width: min(100%, 320px);
-  min-height: 130px;
+  min-width: 280px;
+  min-height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.97), rgba(246, 249, 252, 0.96));
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px 24px;
   border-radius: 20px;
-  box-shadow: 0 12px 28px rgba(29, 36, 51, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.94);
+  box-shadow: 0 0 25px rgba(231, 111, 81, 0.2), 0 0 25px rgba(22, 124, 128, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(4px);
 }
 
 .presenting-card:hover {
@@ -2086,12 +2088,12 @@ img.floated-img-right {
 .presenting-card--neighbrhub {
   background: rgba(60, 0, 92, 1);
   overflow: hidden;
-  min-height: 180px;
-  padding: 10px 12px;
+  box-shadow: 0 0 30px rgba(60, 0, 92, 0.4), 0 0 25px rgba(231, 111, 81, 0.2);
+  border-color: rgba(60, 0, 92, 0.5);
 }
 
 .presenting-card--north-central {
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.99), rgba(247, 241, 242, 0.97));
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .presenting-card img {
@@ -2106,11 +2108,10 @@ img.floated-img-right {
 }
 
 .presenting-logo-neighbrhub {
-  width: min(100%, 320px);
-  height: auto;
+  height: 140px;
   max-width: 100%;
-  transform: scale(1.22);
-  transform-origin: center;
+  object-fit: contain;
+  transform: none;
 }
 
 .presenting-card--north-central img {
