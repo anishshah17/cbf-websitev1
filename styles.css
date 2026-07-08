@@ -2084,7 +2084,7 @@ img.floated-img-right {
 }
 
 .presenting-card--neighbrhub {
-  background: linear-gradient(160deg, rgba(20, 33, 44, 0.97), rgba(41, 58, 75, 0.95));
+  background: rgba(60, 0, 92, 1);
   overflow: hidden;
   min-height: 180px;
   padding: 10px 12px;
