@@ -2118,3 +2118,81 @@ img.floated-img-right {
   height: 54px;
   width: auto;
 }
+
+/* Homepage presenting-sponsors: boxed cards (white for NCC, purple for
+   Neighbrhub) with an orange + blue glow sitting behind/around the boxes.
+   "Presenting Sponsors" label stays orange above it. Narrower than the
+   community-sponsor carousel below it. */
+.presenting-sponsors--home {
+  max-width: 640px;
+  margin: 0 auto 26px;
+  padding: 10px;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.presenting-sponsors--home::before,
+.presenting-sponsors--home::after {
+  content: none;
+}
+
+.presenting-sponsors--home .presenting-grid {
+  gap: 28px;
+}
+
+.presenting-sponsors--home .presenting-card {
+  position: relative;
+  width: 260px;
+  height: 220px;
+  min-width: 0;
+  min-height: 0;
+  padding: 22px;
+  border: 0;
+  overflow: visible;
+  backdrop-filter: none;
+}
+
+.presenting-sponsors--home .presenting-card::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 34%, rgba(231, 111, 81, 0.55), transparent 62%),
+    radial-gradient(circle at 68% 66%, rgba(22, 124, 128, 0.55), transparent 62%);
+  filter: blur(24px);
+  pointer-events: none;
+}
+
+.presenting-sponsors--home .presenting-card--neighbrhub {
+  background: rgba(60, 0, 92, 1);
+  box-shadow: none;
+  border-radius: 20px;
+}
+
+.presenting-sponsors--home .presenting-card--north-central {
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  border-radius: 20px;
+}
+
+.presenting-card a {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.presenting-sponsors--home .presenting-card img {
+  width: 100%;
+  height: 100%;
+  max-width: 84%;
+  max-height: 84%;
+  object-fit: contain;
+}
