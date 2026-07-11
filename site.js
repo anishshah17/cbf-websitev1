@@ -7,7 +7,7 @@ const supabaseConfig = {
 const BIZZY_CORE_FAQ = [
   "Fair date: Saturday, August 8, 2026.",
   "Fair time: 10:00 AM - 2:00 PM.",
-  "Fair location: TBD (to be announced).",
+  "Fair location: Wentz Science Center (311 Chicago Ave, Naperville, IL 60540)",
   "Participant age range: 5-14.",
   "Team size: up to 3 participants per business.",
   "Booth size: 5' x 6' table.",
@@ -859,7 +859,7 @@ async function getBizzyFairContext(state) {
 async function buildBizzyFairContext() {
   const baselineContext =
     "Naperville Children's Business Fair: Saturday, August 8, 2026, 10:00 AM - 2:00 PM. " +
-    "Location is currently listed as TBD. Applications open in late April 2026. " +
+    "Location is currently listed as Wentz Science Center (311 Chicago Ave, Naperville, IL 60540). Applications open in late April 2026. " +
     "Age range is 5-14, with up to 3 participants per business. " +
     "This is a one-day market where children launch original businesses. " +
     "The site includes event details, FAQ rules, media, sponsor info, contact details, and 1:1 mentorship sessions.";
