@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sponsors | Naperville Children's Business Fair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260707-3" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero-orb hero-orb--one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--two" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--three" aria-hidden="true"></div>
+
+      <nav class="nav">
+        <a class="logo" href="index.html" aria-label="Go to home page">
+          <img src="assets/cbf-logo.png" alt="Naperville Children's Business Fair logo" />
+          <span>Naperville Children's Business Fair</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="event.html">Event Details</a>
+          <a href="media.html">Media</a>
+          <a href="sessions.html">1:1 Sessions</a>
+          <a href="applications.html">Apply</a>
+          <a href="sponsors.html" class="active">Sponsors</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://shop.napervillecbf.com/collections/all" target="_blank" rel="noopener noreferrer">Shop</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Sponsors</p>
+          <h1>Help local kidpreneurs take the stage.</h1>
+          <p class="lead">
+            Sponsorship support helps power materials, mentoring, outreach, and
+            a memorable fair-day experience for participating families.
+          </p>
+        </div>
+
+        <div class="hero-card gradient-card gradient-card--warm reveal">
+          <h2>Why Sponsor?</h2>
+          <ul class="why-sponsor-list">
+            <li>Reach families and community leaders across Naperville.</li>
+            <li>Invest directly in youth entrepreneurship and confidence-building.</li>
+            <li>Support a local event that celebrates student innovation.</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section sponsors">
+        <div class="section-header reveal">
+          <h2>Sponsorship Opportunities</h2>
+          <p>
+            Review sponsorship packages and choose the level that best fits your
+            organization.
+          </p>
+          <div class="cta-row" style="justify-content: center;">
+            <a
+              class="btn ghost"
+              href="https://docs.google.com/document/d/1RXQgsgFxO8eBo5LZ05Av1uk90hIVxACEh3mi60HlUFI/edit?tab=t.0"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Sponsorship Packages
+            </a>
+          </div>
+        </div>
+
+        <div class="sponsors-grid">
+          <div class="sponsor-card gradient-card gradient-card--warm reveal">
+            <h3>Diamond Supporting Sponsorship - $1000</h3>
+            <ul class="tier-list">
+              <li>Fair is presented by your business.</li>
+              <li>Business name is included across promotional materials.</li>
+              <li>Featured keynote speaking opportunity at prefair workshops or fair.</li>
+              <li>Promotional table space at fair and prefair workshops.</li>
+              <li>Promotional materials included in participant goodie bags.</li>
+              <li>Recognition tied to awards at prefair workshops and fair.</li>
+              <li>Create a branded award.</li>
+              <li>Logo linked on website.</li>
+              <li>Direct access to waitlist and mailing list plus featured campaign placement.</li>
+              <li>Bimonthly Facebook, Instagram, and TikTok shoutouts during and after program.</li>
+              <li>Customized virtual workshop for kidpreneurs.</li>
+              <li>Access to professional photography for company marketing.</li>
+              <li>Opportunity to nominate two professionals as guest judges.</li>
+            </ul>
+          </div>
+          <div class="sponsor-card gradient-card gradient-card--cool reveal">
+            <h3>Gold Supporting Sponsor - $500</h3>
+            <ul class="tier-list">
+              <li>Promotional materials included in participant goodie bags.</li>
+              <li>Promotional table space at the fair.</li>
+              <li>Branded activity at prefair workshops.</li>
+              <li>Logo linked on website.</li>
+              <li>Access to professional photography for company marketing.</li>
+              <li>Recognition tied to specific awards at prefair workshops.</li>
+              <li>Monthly Facebook, Instagram, and LinkedIn shoutouts.</li>
+              <li>Promotional table space at prefair workshops.</li>
+            </ul>
+          </div>
+          <div class="sponsor-card gradient-card gradient-card--sun reveal">
+            <h3>Silver Supporting Sponsor - $250</h3>
+            <ul class="tier-list">
+              <li>Promotional materials included in participant goodie bags.</li>
+              <li>Recognition tied to specific awards at prefair workshops.</li>
+              <li>Logo linked on website.</li>
+              <li>Facebook, Instagram, and LinkedIn shoutouts.</li>
+            </ul>
+          </div>
+          <div class="sponsor-card reveal">
+            <h3>Friend of the Fair Sponsor - $100</h3>
+            <ul class="tier-list">
+              <li>Name linked on website.</li>
+              <li>Community Supporter Certificate.</li>
+              <li>Early access to event recap and photos.</li>
+              <li>Facebook, Instagram, and LinkedIn shoutouts.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="workshop-note reveal">
+          All proceeds are tax deductible and benefit the Naperville Children's
+          Business Fair.
+        </div>
+      </section>
+
+      <section class="section sponsor-wall">
+        <div class="section-header reveal">
+          <h2>2026 Sponsor Spotlight</h2>
+          <p>
+            This year’s fair is powered by incredible local businesses,
+            organizations, and mentors.
+          </p>
+        </div>
+
+        <div class="presenting-sponsors presenting-sponsors--home reveal">
+          <p class="presenting-title">Presenting Sponsors</p>
+          <div class="presenting-grid">
+            <div class="presenting-card presenting-card--neighbrhub">
+              <a href="http://neighbrhub.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Neighbrhub website">
+                <img class="presenting-logo-neighbrhub" src="assets/2026 sponsors/neighbrhub.png" alt="Neighbrhub logo" loading="lazy" />
+              </a>
+            </div>
+            <div class="presenting-card presenting-card--north-central">
+              <a href="https://www.northcentralcollege.edu/" target="_blank" rel="noopener noreferrer" aria-label="Visit North Central College website">
+                <img src="assets/2026 sponsors/North-Central-College-Logo.png" alt="North Central College logo" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponsor-logo-wall reveal">
+          <p class="sponsor-ribbon-label">Community Sponsors</p>
+          <div class="sponsor-marquee">
+            <div class="sponsor-marquee-track">
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/andyscustard.png" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/bestdefenseconcepts.png" alt="Best Defense Concepts logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/conciergelaw.png" alt="Concierge Law logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/gradepower.png" alt="Grade Power logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/kendrascott.png" alt="Kendra Scott logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/ndp.png" alt="Notre Dame Parish logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/raising cane's.png" alt="Raising Cane's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/andyscustard.png" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/bestdefenseconcepts.png" alt="Best Defense Concepts logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/conciergelaw.png" alt="Concierge Law logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/gradepower.png" alt="Grade Power logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/kendrascott.png" alt="Kendra Scott logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/ndp.png" alt="Notre Dame Parish logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/2026 sponsors/raising cane's.png" alt="Raising Cane's logo" loading="lazy" /></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-row" style="justify-content: center;">
+          <a class="btn primary" href="#sponsor-form">Become a 2026 Sponsor</a>
+        </div>
+      </section>
+
+      <section class="section sponsor-wall">
+        <div class="section-header reveal">
+          <h2>2025 Sponsor Spotlight</h2>
+          <p>
+            Last year’s fair was powered by incredible local businesses,
+            organizations, and mentors.
+          </p>
+        </div>
+        <div class="sponsor-logo-wall reveal">
+          <p class="sponsor-ribbon-label">Featured 2025 Partners</p>
+          <div class="sponsor-marquee">
+            <div class="sponsor-marquee-track">
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/matrix club.png" alt="The Matrix Club logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nacc.png" alt="NACC logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville park district.png" alt="Naperville Park District logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville public library.png" alt="Naperville Public Library logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nef.png" alt="NEF logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/KidsMatter.png" alt="KidsMatter logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/raising cane's chicken fingers.png" alt="Raising Cane's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/goldfish swim school.png" alt="Goldfish Swim School logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/capstone financial advisors.png" alt="Capstone Financial Advisors logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/cinnaholic.png" alt="Cinnaholic logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville development partnership.png" alt="Naperville Development Partnership logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/pinots palette.png" alt="Pinot's Palette logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/aqueity.png" alt="Aqueity logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/matrix club.png" alt="The Matrix Club logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nacc.png" alt="NACC logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville park district.png" alt="Naperville Park District logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville public library.png" alt="Naperville Public Library logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nef.png" alt="NEF logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/KidsMatter.png" alt="KidsMatter logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/raising cane's chicken fingers.png" alt="Raising Cane's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/goldfish swim school.png" alt="Goldfish Swim School logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/capstone financial advisors.png" alt="Capstone Financial Advisors logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/cinnaholic.png" alt="Cinnaholic logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville development partnership.png" alt="Naperville Development Partnership logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/pinots palette.png" alt="Pinot's Palette logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/aqueity.png" alt="Aqueity logo" loading="lazy" /></div>
+            </div>
+          </div>
+          <div class="sponsor-marquee sponsor-marquee--reverse">
+            <div class="sponsor-marquee-track">
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/andy's frozen custard.png" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/chick-fil-a.png" alt="Chick-fil-A logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/dairy queen (dq).png" alt="Dairy Queen logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/giordano's.png" alt="Giordano's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/jenis ice creams.png" alt="Jeni's Ice Creams logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville hearing services.png" alt="Naperville Hearing Services logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/astro fun world.png" alt="Astro Fun World logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nautical bowls.png" alt="Nautical Bowls logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nrwib.png" alt="NRWIB logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/sno problems.png" alt="Sno Problems logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/susan myket phd and associates.png" alt="Susan Myket PhD and Associates logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/b and k.png" alt="B and K logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/andy's frozen custard.png" alt="Andy's Frozen Custard logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/chick-fil-a.png" alt="Chick-fil-A logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/dairy queen (dq).png" alt="Dairy Queen logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/giordano's.png" alt="Giordano's logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/jenis ice creams.png" alt="Jeni's Ice Creams logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/naperville hearing services.png" alt="Naperville Hearing Services logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/astro fun world.png" alt="Astro Fun World logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nautical bowls.png" alt="Nautical Bowls logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/nrwib.png" alt="NRWIB logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/sno problems.png" alt="Sno Problems logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/susan myket phd and associates.png" alt="Susan Myket PhD and Associates logo" loading="lazy" /></div>
+              <div class="sponsor-logo-card"><img src="assets/logos (2025 sponsors)/b and k.png" alt="B and K logo" loading="lazy" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sponsor-info" id="sponsor-form">
+        <div class="section-header reveal">
+          <h2>Sponsorship Interest Form</h2>
+          <p>
+            Complete this form if you are interested in becoming a sponsor.
+          </p>
+        </div>
+        <div class="form-container reveal">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc6LdDbtlqKrqu1r7P_29dx-qpcQ3mFyaWxHYblFqDIanedpg/viewform?embedded=true"
+            height="1850"
+            title="Naperville Children's Business Fair sponsorship interest form"
+          >
+            Loading…
+          </iframe>
+        </div>
+      </section>
+
+      <section class="section contact">
+        <div class="section-header reveal">
+          <h2>Interested in Sponsoring?</h2>
+          <p>Email the committee and we can share the available sponsorship options.</p>
+        </div>
+        <div class="contact-form reveal">
+          <a class="btn primary" href="mailto:napervillebusinessfair@gmail.com">Contact the Sponsor Team</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Naperville Children's Business Fair</strong>
+        <p>Hosted by local Naperville high school students.</p>
+      </div>
+      <div>
+        <p>© 2026 Naperville Children's Business Fair</p>
+      </div>
+    </footer>
+
+    <script src="gemini-config.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

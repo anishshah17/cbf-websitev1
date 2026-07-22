@@ -1563,6 +1563,11 @@ body.media-viewer-open {
   object-fit: contain;
 }
 
+.sponsor-logo-card img[src*="kendrascott.png"],
+.sponsor-logo-card img[src*="ndp.png"] {
+  max-height: 104px;
+}
+
 .footer {
   max-width: var(--max-width);
   margin: 28px auto 40px;
