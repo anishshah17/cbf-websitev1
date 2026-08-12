@@ -22,7 +22,35 @@ const BIZZY_CORE_FAQ = [
   "Families can join the mailing list from the home/contact pages."
 ].join("\n");
 
+const CBF_2026_DSC_FILES = [
+  "DSC00569.JPG", "DSC00570.JPG", "DSC00573.JPG", "DSC00576.JPG", "DSC00577.JPG", "DSC00578.JPG",
+  ...Array.from({ length: 77 }, (_, index) => `DSC${String(2199 + index).padStart(5, "0")}.JPG`).filter((file) => !["DSC02276.JPG", "DSC02277.JPG"].includes(file)),
+  ...Array.from({ length: 93 }, (_, index) => `DSC${String(2278 + index).padStart(5, "0")}.JPG`).filter((file) => file !== "DSC02288.JPG")
+];
+
+const CBF_2026_PHONE_FILES = `
+IMG_1560.JPG IMG_1564.jpeg IMG_1565.jpeg IMG_1672.jpeg IMG_1679.jpeg IMG_1680.jpeg IMG_1681.jpeg
+IMG_1691.jpeg IMG_1692.jpeg IMG_1693.jpeg IMG_1694.jpeg IMG_1695.jpeg IMG_1696.jpeg IMG_1697.jpeg IMG_1698.jpeg
+IMG_1700.jpeg IMG_1701.jpeg IMG_1702.jpeg IMG_1703.jpeg IMG_1722.jpeg IMG_4715.jpeg IMG_4716.jpeg IMG_4717.jpeg
+IMG_4719.jpeg IMG_4720.jpeg IMG_4721.jpeg IMG_4722.jpeg IMG_4723.jpeg IMG_4724.jpeg IMG_4725.jpeg IMG_4726.jpeg
+IMG_4727.jpeg IMG_4729.jpeg IMG_4731.jpeg IMG_4732.mov IMG_4733.jpeg IMG_4734.jpeg IMG_4735.jpeg IMG_4736.jpeg
+IMG_4737.jpeg IMG_4738.mov IMG_4739.jpeg IMG_4741.jpeg IMG_4742.jpeg IMG_4743.jpeg IMG_4744.jpeg IMG_4745.mov
+IMG_4748.jpeg IMG_4751.jpeg IMG_4752.jpeg IMG_4753.mov IMG_4754.jpeg IMG_4755.jpeg IMG_4756.jpeg IMG_4757.jpeg
+IMG_4759.mov IMG_4761.jpeg IMG_4762.jpeg IMG_4763.jpeg IMG_4764.jpeg IMG_4765.jpeg IMG_4766.mov IMG_4768.jpeg
+IMG_4769.jpeg IMG_4770.jpeg IMG_4771.jpeg IMG_4772.jpeg IMG_4775.jpeg IMG_4777.jpeg IMG_4779.jpeg IMG_4780.jpeg
+IMG_4781.mov IMG_4783.jpeg IMG_4784.jpeg IMG_4785.jpeg IMG_4786.jpeg IMG_4788.jpeg IMG_4789.mov IMG_9005.mp4 IMG_9006.mp4
+dji_fly_20260808_115210_22_1786238927616_video.mp4
+`.trim().split(/\s+/);
+
+const CBF_2026_FILES = [...CBF_2026_DSC_FILES, ...CBF_2026_PHONE_FILES];
+const CBF_2026_MEDIA_ITEMS = CBF_2026_FILES.map((file) => ({
+  src: `assets/CBF2026/${file}`,
+  type: /\.(mp4|mov)$/i.test(file) ? "video" : "image",
+  collection: "2026"
+}));
+
 const CBF_MEDIA_ITEMS = [
+  ...CBF_2026_MEDIA_ITEMS,
   { src: "assets/cbf 2025/IMG_1290.jpg", type: "image", collection: "2025" },
   { src: "assets/cbf 2025/IMG_1291.jpg", type: "image", collection: "2025" },
   { src: "assets/cbf 2025/IMG_1292.jpg", type: "image", collection: "2025" },
@@ -421,7 +449,7 @@ function setupMediaViewer() {
   const filtersContainer = gallery.querySelector("[data-media-filters]");
   const grid = gallery.querySelector("[data-media-grid]");
   const count = gallery.querySelector("[data-media-count]");
-  const filters = ["All", "2025", "Past Fairs"];
+  const filters = ["All", "2026", "2025", "Past Fairs"];
   let activeFilter = "All";
   let visibleItems = [];
   let activeIndex = 0;
