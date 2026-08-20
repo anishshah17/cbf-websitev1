@@ -70,6 +70,9 @@
                 <div class="media-viewer-grid" data-media-grid>
                   <p class="form-helper">Loading gallery...</p>
                 </div>
+                <button class="btn ghost media-viewer-load-more" type="button" data-media-load-more hidden>
+                  Load more
+                </button>
               </div>
             </div>
 
@@ -80,6 +83,13 @@
                 <div class="social-card gradient-card gradient-card--sun">
                   <h3>Instagram</h3>
                   <p>Follow us for photos, reels, and behind-the-scenes updates.</p>
+                  <div class="instagram-embed" aria-label="Naperville Children's Business Fair Instagram profile">
+                    <blockquote
+                      class="instagram-media"
+                      data-instgrm-permalink="https://www.instagram.com/naperville.business.fair/"
+                      data-instgrm-version="14"
+                    ></blockquote>
+                  </div>
                   <div class="cta-row">
                     <a class="btn ghost" href="https://www.instagram.com/naperville.business.fair/" target="_blank" rel="noreferrer">Open Instagram</a>
                   </div>
@@ -94,6 +104,7 @@
                     <iframe
                       src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FNaperville-Childrens-Business-Fair-100067899293396%2F&tabs=timeline&width=500&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                       title="Naperville Children's Business Fair Facebook page"
+                      loading="lazy"
                       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                     ></iframe>
                   </div>
@@ -116,6 +127,7 @@
     </footer>
 
     <script src="gemini-config.js"></script>
+    <script async src="https://www.instagram.com/embed.js"></script>
     <script src="site.js"></script>
   </body>
 </html>

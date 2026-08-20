@@ -1211,6 +1211,26 @@ body.has-announcement-fab .bizzy-widget {
   border: 0;
 }
 
+.instagram-embed {
+  margin-top: 18px;
+  min-height: 420px;
+  max-height: 520px;
+  overflow: auto;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.instagram-embed .instagram-media {
+  width: calc(100% - 2px) !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+}
+
+.media-viewer-load-more {
+  display: block;
+  margin: 22px auto 0;
+}
+
 .video-frame {
   aspect-ratio: 16 / 9;
 }

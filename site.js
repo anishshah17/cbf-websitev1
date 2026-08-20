@@ -449,9 +449,12 @@ function setupMediaViewer() {
   const filtersContainer = gallery.querySelector("[data-media-filters]");
   const grid = gallery.querySelector("[data-media-grid]");
   const count = gallery.querySelector("[data-media-count]");
+  const loadMoreButton = gallery.querySelector("[data-media-load-more]");
   const filters = ["All", "2026", "2025", "Past Fairs"];
+  const pageSize = 24;
   let activeFilter = "All";
   let visibleItems = [];
+  let renderedItemCount = pageSize;
   let activeIndex = 0;
   let modal = null;
   let stage = null;
@@ -494,9 +497,12 @@ function setupMediaViewer() {
   const renderGallery = () => {
     visibleItems = getVisibleItems();
     grid.innerHTML = "";
-    count.textContent = `${visibleItems.length} items`;
+    const itemsToRender = visibleItems.slice(0, renderedItemCount);
+    count.textContent = renderedItemCount < visibleItems.length
+      ? `Showing ${itemsToRender.length} of ${visibleItems.length} items`
+      : `${visibleItems.length} items`;
 
-    visibleItems.forEach((item, index) => {
+    itemsToRender.forEach((item, index) => {
       const tile = document.createElement("button");
       tile.type = "button";
       tile.className = "media-viewer-tile";
@@ -512,6 +518,11 @@ function setupMediaViewer() {
       grid.append(tile);
     });
 
+    const remainingItems = visibleItems.length - itemsToRender.length;
+    loadMoreButton.hidden = remainingItems === 0;
+    loadMoreButton.textContent = remainingItems > 0
+      ? `Load more (${remainingItems} remaining)`
+      : "Load more";
     updateFilterButtons();
   };
 
@@ -605,10 +616,16 @@ function setupMediaViewer() {
     button.textContent = filter === "All" ? "All Media" : filter;
     button.addEventListener("click", () => {
       activeFilter = filter;
+      renderedItemCount = pageSize;
       closeViewer();
       renderGallery();
     });
     filtersContainer.append(button);
+  });
+
+  loadMoreButton.addEventListener("click", () => {
+    renderedItemCount += pageSize;
+    renderGallery();
   });
 
   document.addEventListener("keydown", (event) => {
